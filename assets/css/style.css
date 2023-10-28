@@ -1,0 +1,84 @@
+*{
+	paddin: 0;
+	margin: 0;
+	box-sizing: border-box;
+	background-color: black;
+}
+
+.header{
+	background-color: #000;
+}
+
+.header img{
+	width: 150px;
+	margin-bottom: 20px;
+}
+
+.buttons {
+    margin-top: 35px;
+}
+
+.btn-info {
+    color: #fff;
+    background-color: #dc3545;
+    border-color: #dc3545;
+    margin-right: 10px;
+}
+
+.movieCard{
+	height: 400px;
+	margin-bottom: 30px;
+	position: relative;
+}
+
+.movieCard img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.titleInfo{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.overview{
+	padding: 5px;
+	position: absolute;
+	top: 30%;
+	left: 0;
+	width: 100%;
+	background-color: cornsilk;
+	color : black;
+	height: 70%;
+	transform: translateY(100px);
+	transform: scale(0);
+	opacity: 0;
+	transition: all .6s ease-in-out;
+}
+
+.overview h5{
+	color: red;
+	background-color: cornsilk;
+}
+
+.movieCard:hover .overview{
+	transform: scale(1);
+	opacity: 1;
+}
+
+.titleInfo h4{
+	color: white;
+	
+}
+
+.titleInfo .rating{
+	color: yellow;
+	
+}
+
+.titleInfo .ratingHigh{
+	color: gold;
+}
